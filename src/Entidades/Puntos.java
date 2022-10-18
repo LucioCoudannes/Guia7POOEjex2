@@ -58,10 +58,11 @@ public class Puntos {
         this.y2 = y2;
     }
 
-    @Override
+   @Override
     public String toString() {
-        return "Puntos{" + "x1=" + x1 + ", x2=" + x2 + ", y1=" + y1 + ", y2=" + y2 + '}';
+        return "El primer punto es [" + x1 + "][" + y1 + "]\nEl segundo punto es: [" + x2 + "][" + y2 + "]";
     }
+
     
     
     

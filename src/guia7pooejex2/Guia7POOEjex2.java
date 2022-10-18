@@ -25,15 +25,14 @@ public class Guia7POOEjex2 {
         //que existe entre los dos puntos que existen en la clase Puntos
         
         Puntos p1 = new Puntos();
-        Puntos p2 = new Puntos();
-        
+ 
         
         PuntosServicio ps = new PuntosServicio();
         
-        ps.crearPuntos(p1, p2);
+        ps.crearPuntos(p1);
               
         
-        ps.calcularDis(p1, p2);
+        ps.calcularDis(p1);
         
         
         

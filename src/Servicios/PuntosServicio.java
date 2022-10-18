@@ -16,28 +16,28 @@ public class PuntosServicio {
 
     Scanner leer = new Scanner(System.in);
 
-    public void crearPuntos(Puntos cx, Puntos cy) {
+    public void crearPuntos(Puntos cx) {
 
         System.out.println("Ingrese el valor de x1");
         cx.setX1(leer.nextInt());
 
         System.out.println("Ingrese el valor de x2");
-        cx.setX2(leer.nextInt());
+        cx.setY1(leer.nextInt());
 
         System.out.println("Ingrese el valor de y1");
-        cy.setY1(leer.nextInt());
+        cx.setX2(leer.nextInt());
 
         System.out.println("Ingrese el valor de y2");
-        cy.setY2(leer.nextInt());
+        cx.setY2(leer.nextInt());
 
     }
 
-    public void calcularDis(Puntos d, Puntos f) {
+    public void calcularDis(Puntos d) {
 
         System.out.println(d.toString());
-        System.out.println(f.toString());
+       
 
-        double distancia = Math.sqrt(Math.pow((f.getY1()-d.getX1()), 2)+Math.pow((f.getY2()-d.getX2()), 2));
+        double distancia = Math.sqrt(Math.pow((d.getX2()-d.getX1()), 2)+Math.pow((d.getY2()-d.getY1()), 2));
 
         System.out.println("La distancia entre ambos puntos es de " + distancia);
 
